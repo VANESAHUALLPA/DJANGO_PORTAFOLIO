@@ -6,48 +6,34 @@
 
 <!-- Hero Section -->
 <header class="row bg-black">
-  <div class="col-md-4">
-    <img src="{% static 'portfolio/profile.jpg' %}" />
+  <div class="col-md-6">
+    <img src="{% static 'portfolio/PERU.jpg' %}" />
   </div>
 
-  <div class="col-md-8 my-auto p-4">
-    <h1><strong>Vanesa Huallpa</strong></h1>
-    <h3>This is PERU</h3>
-    <p>Peru is a country in South America. The capital is Lima. The ruins of Machu Picchu, the Andes mountains, and the source of the Amazon River are all found in Peru.
+  <div class="col-md-6 my-auto p-3">
+    <h1><strong> PERU </strong></h1>
+    <h3>Culture Peru</h3>
+    <p>Peru is one of the world’s most varied countries. It is a multicultural nation, filled with traditions, a unique gastronomy and vast natural reserves. It is home to 12 UNESCO World Heritage Sites and 84 of the planet’s 117 life zones. Peru is situated in the western part of South America and shares borders with Ecuador, Colombia, Brazil, Bolivia and Chile. Its enormous territory, covering more than 1.2 million square kilometers, is composed of three regions: Coast, Highlands and Jungle. Its current population exceeds 31.5 million inhabitants. 
 
-      Peru is bordered to the north by Ecuador and Colombia, to the east by Brazil, to the south by Chile, and to the southeast by Bolivia. Peru is a representative democratic republic divided into 25 regions and over 33 million people live in it.
-      
-      Peruvian territory was home to the Norte Chico civilization, one of the oldest in the world, and to the Inca Empire, the largest state in Pre-Columbian America. The Spanish Empire conquered the region in the 16th century and established a Viceroyalty, which included most of its South American colonies. After achieving independence in 1821.
-      
-      Peru suffered a terrible guerrilla war in the 1980s. The communist (Maoist) Shining Path tried to take over the country. But after the leader of the group was captured in 1992, Shining Path was not a threat anymore. During the 1990s, it was ruled by President Alberto Fujimori. During this time, the economy of Peru got better, and it became easier to start a company or operate a business. After Fujimori, Alejandro Toledo was elected president, and then Alan Garcia, who was president from 1985 to 1990, was elected again in 2006. Ollanta Humala was elected president in 2011 and Pedro Pablo Kuczynski was elected president in 2016. In March 2018, Kuczynski resigned following political scandals and Vice President Martín Vizcarra was sworn in as the next president.
-      
-      Peru's most important exports, products that it sells to other countries, are fish, gold and other metals, oil, coffee, sugar, and cotton. Also, the food in Peru is very diverse, including typical dishes like Ceviche and Broiled Chicken.
-      
-      Tourists from other countries like to come to Peru because of the history and also to enjoy nature. Many people come to climb mountains in the Cordillera Blanca in the Ancash Region, and many people visit Peru's long Pacific coast or the Amazon jungle. Cuzco and Machu Picchu are just two of the places where many buildings built by the Incas are still standing after hundreds of years, and these are some of the most visited places. The Incas were not the only tribe in Peru who left buildings and artifacts, but they were the most powerful.
-      
-      Peru is divided into 25 regions of Peru regions. Lima is the capital and other main regions are Cuzco, Arequipa and Lambayeque.
-      
-      
-      Urarina shaman, 1988
-      In the Amazon jungle region, we can find many important rivers and different animals, plants and people of many indigenous cultures.
-      
-      Peru includes 29.5 million people.
-      
-      The currency of Peru is the Nuevo Sol.</p>
-    <a class="btn btn-dark rounded-0 my-3" href="{% static 'portfolio/"></a>
+ 
+
+      Spanish is the official language of Peru; however, 47 indigenous languages are also spoken in the country, including Quechua and Aymara.</p>
   </div>
 </header>
 
 <!-- Porfolio Section -->
 <div class="row my-4 text-center">
 
-  <h3>My Projects</h3>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aperiam?</p>
+  <h3>Wonders of Peru</h3>
+  <p>Here you know the wonders of Peru</p>
 
   {% for project in projects %}
   <div class="col-md-4 p-4">
     <div class="card bg-black card-project">
-      <img src="{{project.image.url }}" class="card-img-top" />
+      <img 
+        src="{{project.image.url }}" 
+        alt="{{project.title}}"
+        class="card-img-top" />
 
       <div class="card-body">
 
@@ -55,8 +41,12 @@
         <p>{{ project.description }}</p>
 
         {% if project.url %}
-        <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm" target="__blank" rel="noreferrer">Visit the
-          Project</a>
+        <a 
+          href="{{project.url}}" 
+          class="btn btn-light rounded-0 btn-sm" 
+          target="__blank" 
+          rel="noreferrer">Visit the
+          Page</a>
         {% endif %}
       </div>
     </div>
