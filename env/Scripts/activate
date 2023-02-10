@@ -44,7 +44,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='C:\Users\vanes\OneDrive\Área de Trabalho\Opcion 2\vanesa\env'
+VIRTUAL_ENV='C:\Users\vanes\OneDrive\Área de Trabalho\portafolio\ProyectoU4\env'
 if ([ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ]) && $(command -v cygpath &> /dev/null) ; then
     VIRTUAL_ENV=$(cygpath -u "$VIRTUAL_ENV")
 fi

@@ -1,4 +1,4 @@
-@set "VIRTUAL_ENV=C:\Users\vanes\OneDrive\Área de Trabalho\Opcion 2\vanesa\env"
+@set "VIRTUAL_ENV=C:\Users\vanes\OneDrive\Área de Trabalho\portafolio\ProyectoU4\env"
 
 @if defined _OLD_VIRTUAL_PROMPT (
     @set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

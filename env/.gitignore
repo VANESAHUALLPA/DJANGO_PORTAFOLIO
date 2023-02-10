@@ -1,14 +1,2 @@
-**/__pycache__
-
-# media files 
-media
-
-## virtual environment
-venv
-
-## visual studio code settings
-.vscode
-
-### ignore sqlite3
-
-db.sqlite3
+# created by virtualenv automatically
+*
